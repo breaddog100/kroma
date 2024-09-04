@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置版本号
-current_version=20240904002
+current_version=20240904003
 
 update_script() {
     # 指定URL
@@ -83,7 +83,7 @@ function install_full_node(){
 function install_validator_node(){
 
     # 输入参数
-    read -p "ETH钱包私钥，钱包中需要有0.2eth作为押金: " YOUR_ETH_PRIVATE_KEY
+    read -p "ETH钱包私钥，钱包中需要有0.1 sepolia eth作为押金: " YOUR_ETH_PRIVATE_KEY
 
     # 更新系统
 	sudo apt update
