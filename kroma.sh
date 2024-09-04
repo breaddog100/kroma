@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置版本号
-current_version=20240904001
+current_version=20240904002
 
 update_script() {
     # 指定URL
@@ -177,8 +177,8 @@ function main_menu() {
 	    read -p "请输入选项: " OPTION
 	
 	    case $OPTION in
-	    1) install_node ;;
-        2) start_node ;;
+	    1) install_full_node ;;
+        2) install_validator_node ;;
         3) stop_node ;;
 	    4) logs_node ;;
         5) check_block ;;
